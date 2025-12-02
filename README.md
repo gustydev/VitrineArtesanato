@@ -1,13 +1,12 @@
 # Vitrine de Artesanato Comunitário
 ## Descrição do Projeto
-A ** Vitrine de Artesanato Comunitário ** é uma plataforma digital que
+A Vitrine de Artesanato Comunitário é uma plataforma digital que
 conecta artesãos locais diretamente a clientes , valorizando a economia
 local.
 ## Equipe (N705/N708)
 * Lucas de Souza Santos (2326221)
 * Gustavo Diorlando Moreira de Almeida (2323769)
 * Pedro Igor de Souza Costa (2323848)
-* Diego Rodrigues de Araujo (2326157)
 * Heron Verissimo de Souza (2326347)
 * Francisco Benicio do Nascimento (2315073)
 ## Funcionalidades
