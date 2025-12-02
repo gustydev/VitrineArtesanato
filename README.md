@@ -51,7 +51,7 @@ Abaixo, o status atual das funcionalidades principais do sistema:
 
 **1. Clonar o repositório**
 ```bash
-git clone [https://github.com/gustydev/vitrineartesanato.git](https://github.com/gustydev/vitrineartesanato.git)
+git clone https://github.com/gustydev/vitrineartesanato.git
 cd VitrineArtesanato
 ````
 
@@ -90,5 +90,6 @@ A validação foi realizada presencialmente com moradores locais para garantir a
   * **Público-Alvo:** Ana Paula, moradora local (Aldeota/Fortaleza).
   * **Resumo do Feedback:** A participante conseguiu identificar facilmente os preços e artesãos. Elogiou a qualidade das fotos (especialmente do tapete de crochê) e considerou a função de redirecionamento para o WhatsApp ("Comprar no Zap") extremamente útil para fechar negócios rápidos.
   * **Ajustes Realizados:** O layout dos cartões foi padronizado e as imagens ajustadas para `object-fit: cover` para melhor visualização, conforme observado durante os testes.
+
 
 *Para detalhes completos, evidências e fotos, consulte a pasta [`validation/`](https://www.google.com/search?q=validation/).*
