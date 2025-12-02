@@ -1,5 +1,7 @@
 Relatório de Validação
 
+<img src="evidence/foto_apresentacao.jpg" width="400" alt="Página Inicial">
+
 Data: 30/11/2025 Local: Aldeota/Fortaleza Participante: Ana Paula, moradora local.
 
 Resumo: Apresentamos o protótipo da "Vitrine de Artesanato" para a participante. Ela navegou pela lista de produtos e identificou facilmente os preços e os nomes dos artesãos.
