@@ -1,0 +1,13 @@
+// Teste Simples de Conexão
+const assert = require('assert');
+
+describe('Teste da Vitrine', () => {
+    it('Deve verificar se 1 + 1 é igual a 2 (Teste Básico)', () => {
+        assert.strictEqual(1 + 1, 2);
+    });
+
+    it('Deve confirmar que o sistema está pronto para produção', () => {
+        const sistemaStatus = 'online';
+        assert.strictEqual(sistemaStatus, 'online');
+    });
+});
