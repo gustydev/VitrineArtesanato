@@ -1,0 +1,35 @@
+REGISTRO DE FEEDBACK - VALIDACÃO COM PÚBLICO-ALVO
+
+Data da Sessão: 30/11/2025
+Local: Residência da participante (Bairro Aldeota, Fortaleza)
+Participante: Ana Paula (Consumidora local)
+Entrevistador: Heron Verissimo
+
+---------------------------------------------------------------------
+1. PRIMEIRAS IMPRESSÕES
+A participante acessou a plataforma via navegador mobile (simulado).
+A primeira reação foi positiva em relação à simplicidade:
+"Gostei que não tem aquela tela de login bloqueando tudo. Eu já consigo ver o que tem pra vender logo de cara."
+
+2. NAVEGAÇÃO E USABILIDADE
+- Tarefa: Encontrar o preço do "Tapete de Crochê".
+- Resultado: Sucesso imediato.
+- Comentário: "Está bem visível. O preço verde chama a atenção."
+
+- Tarefa: Identificar quem fez o produto.
+- Resultado: Sucesso.
+- Comentário: "É legal ver o nome 'Sr. João'. Dá pra ver que é gente daqui mesmo fazendo."
+
+3. PONTOS POSITIVOS DESTACADOS
+- Imagens: A participante elogiou especificamente a foto do tapete.
+  "Dá para ver bem os detalhes do ponto do crochê. Isso é importante porque em site ruim a gente não vê a textura."
+- Botão WhatsApp: Foi o ponto alto da validação.
+  "Esse botão 'Comprar no Zap' é a melhor coisa. Eu não tenho paciência para criar conta, colocar cartão, esperar e-mail. No Zap eu já falo com a pessoa, pergunto se tem outra cor e combino a entrega. É muito mais rápido."
+
+4. PONTOS DE MELHORIA E OBSERVAÇÕES (CRÍTICAS)
+Durante o teste, a participante notou uma inconsistência visual que gerou o ajuste técnico posterior:
+- "As fotos estão bonitas, mas aquela ali do vaso parece que está meio esticada, diferente das outras que são mais quadradinhas. Fica um pouco desorganizado."
+  -> [AÇÃO TOMADA]: Este feedback motivou a padronização do CSS com 'object-fit: cover' e altura fixa nos cards.
+
+5. CONCLUSÃO DA PARTICIPANTE
+"Eu usaria com certeza. É como ir na feirinha, mas sem sair de casa. Se tiver mais produtos, vou querer olhar sempre."
