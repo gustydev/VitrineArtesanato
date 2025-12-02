@@ -45,8 +45,10 @@ const produtos = [
 app.get('/', (req, res) => res.send('API Vitrine Rodando!'));
 app.get('/api/products', (req, res) => res.json(produtos));
 
+// Exportação necessária para o Jest conseguir testar
 module.exports = app;
 
+// Só abre a porta se NÃO for um teste
 if (require.main === module) {
     const PORT = 3001;
     app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
