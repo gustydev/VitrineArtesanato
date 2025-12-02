@@ -1,22 +1,116 @@
-# Vitrine de Artesanato Comunitário
+# 🏺 Vitrine de Artesanato Comunitário
+
 ## Descrição do Projeto
-A Vitrine de Artesanato Comunitário é uma plataforma digital que
-conecta artesãos locais diretamente a clientes , valorizando a economia
-local.
-## Equipe (N705/N708)
-* Lucas de Souza Santos (2326221)
-* Gustavo Diorlando Moreira de Almeida (2323769)
-* Pedro Igor de Souza Costa (2323848)
-* Heron Verissimo de Souza (2326347)
-* Francisco Benicio do Nascimento (2315073)
-## Funcionalidades
-- [x] Vitrine de Produtos
-- [x] Contato via WhatsApp
-- [x] Busca de Produtos
-## Como Rodar
-1. Backend: Entre na pasta `backend ` e rode `npm install ` e depois `node
-src/server.js `
-2. Frontend: Entre na pasta `frontend ` e rode `npm install ` e depois `npm
-start `
-## Validação
-Ver pasta `validation /` para fotos e relatórios.
+A **Vitrine de Artesanato Comunitário** é uma plataforma digital desenvolvida para conectar artesãos locais diretamente a seus clientes, eliminando intermediários e valorizando a economia regional. O sistema resolve o problema da falta de visibilidade digital para pequenos produtores, oferecendo uma vitrine simples e direta que facilita o início da negociação via WhatsApp.
+
+O projeto está vinculado ao **ODS 11 (Cidades e Comunidades Sustentáveis)**, promovendo o comércio local e a sustentabilidade econômica da comunidade.
+
+---
+
+## 👥 Equipe de Desenvolvimento
+* **Lucas de Souza Santos** (Matrícula: 2326221) - *Desenvolvedor Full Stack*
+* **Gustavo Diorlando Moreira de Almeida** (Matrícula: 2323769) - *Desenvolvedor Backend / Banco de Dados*
+* **Pedro Igor de Souza Costa** (Matrícula: 2323848) - *Desenvolvedor Frontend / UI*
+* **Heron Verissimo de Souza** (Matrícula: 2326347) - *QA / Validação*
+* **Francisco Benicio do Nascimento** (Matrícula: 2315073) - *Documentação / Integração*
+
+---
+
+## 🚀 Funcionalidades Implementadas
+
+Abaixo, o status atual das funcionalidades principais do sistema:
+
+- [x] **Vitrine de Produtos:** Listagem dinâmica de produtos com foto, título, artesão e preço.
+- [x] **Integração com WhatsApp:** Botão "Comprar no Zap" que inicia a conversa direta.
+- [x] **Backend API:** Endpoint `/api/products` servindo dados JSON.
+- [ ] **Busca de Produtos:** (Implementação Parcial/Futura).
+- [x] **Responsividade:** Layout adaptável para dispositivos móveis e desktop.
+
+### Screenshots
+| Página Inicial | Detalhe de Compra |
+|:---:|:---:|
+| <img src="validation/evidence/pagina_inicial.png" width="400" alt="Página Inicial"> | <img src="validation/evidence/comprar_zap.png" width="400" alt="Compra no Zap"> |
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+**Frontend:**
+* React.js (v18.2.0)
+* CSS3 (Estilização via Objetos JS)
+* HTML5
+
+**Backend:**
+* Node.js
+* Express (v5.1.0)
+* Cors
+
+**Banco de Dados & Ferramentas:**
+* PostgreSQL (Modelagem definida em `database/schema.sql`)
+* Git & GitHub (Versionamento)
+
+---
+
+## 🏗️ Arquitetura do Sistema
+
+O sistema segue uma arquitetura **Cliente-Servidor (MVC simplificado)**:
+
+1.  **Frontend (Client):** Aplicação React SPA (Single Page Application) que consome dados via HTTP.
+2.  **Backend (Server):** API RESTful construída em Express que processa as requisições e serve os dados dos produtos.
+3.  **Integração:** A comunicação ocorre via chamadas `fetch` para o endpoint local `http://localhost:3001/api/products`.
+
+---
+
+## ⚙️ Instruções de Instalação e Execução
+
+### Pré-requisitos
+* Node.js instalado (v14 ou superior)
+* NPM (Gerenciador de pacotes)
+
+### Passo a Passo
+
+**1. Clonar o repositório**
+```bash
+git clone [https://github.com/gustydev/vitrineartesanato.git](https://github.com/gustydev/vitrineartesanato.git)
+cd VitrineArtesanato
+```
+
+**2. Configurar e Rodar o Backend**
+
+```bash
+cd backend
+npm install
+node src/server.js
+```
+
+*O servidor iniciará na porta 3001 (http://localhost:3001)*
+
+**3. Configurar e Rodar o Frontend**
+abra um novo terminal na raiz do projeto e execute:
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+*O navegador abrirá automaticamente em http://localhost:3000*
+
+-----
+
+## 🌐 Acesso ao Sistema
+
+  * **Ambiente de Desenvolvimento:** `http://localhost:3000`
+  * **Credenciais de Teste:** Não aplicável (acesso público sem login nesta etapa).
+
+-----
+
+## ✅ Validação com Público-Alvo
+
+A validação foi realizada presencialmente com moradores locais para garantir a usabilidade e aderência ao propósito.
+
+  * **Público-Alvo:** Ana Paula, moradora local (Aldeota/Fortaleza).
+  * **Resumo do Feedback:** A participante conseguiu identificar facilmente os preços e artesãos. Elogiou a qualidade das fotos (especialmente do tapete de crochê) e considerou a função de redirecionamento para o WhatsApp ("Comprar no Zap") extremamente útil para fechar negócios rápidos.
+  * **Ajustes Realizados:** O layout dos cartões foi padronizado e as imagens ajustadas para `object-fit: cover` para melhor visualização, conforme observado durante os testes.
+
+*Para detalhes completos, evidências e fotos, consulte a pasta [`validation/`](https://www.google.com/search?q=validation/).*
