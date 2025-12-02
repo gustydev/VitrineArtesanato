@@ -37,35 +37,15 @@ Abaixo, o status atual das funcionalidades principais do sistema:
 
 **Frontend:**
 * React.js (v18.2.0)
-* CSS3 (Estilização via Objetos JS)
-* HTML5
+* CSS3
 
 **Backend:**
-* Node.js
-* Express (v5.1.0)
-* Cors
-
-**Banco de Dados & Ferramentas:**
-* PostgreSQL (Modelagem definida em `database/schema.sql`)
-* Git & GitHub (Versionamento)
-
----
-
-## 🏗️ Arquitetura do Sistema
-
-O sistema segue uma arquitetura **Cliente-Servidor (MVC simplificado)**:
-
-1.  **Frontend (Client):** Aplicação React SPA (Single Page Application) que consome dados via HTTP.
-2.  **Backend (Server):** API RESTful construída em Express que processa as requisições e serve os dados dos produtos.
-3.  **Integração:** A comunicação ocorre via chamadas `fetch` para o endpoint local `http://localhost:3001/api/products`.
+* Node.js & Express
+* **Dados em Memória (Mock):** Utilização de arrays estáticos para simulação de persistência e garantia de funcionamento imediato do protótipo (o esquema final do banco está documentado em `database/schema.sql`).
 
 ---
 
 ## ⚙️ Instruções de Instalação e Execução
-
-### Pré-requisitos
-* Node.js instalado (v14 ou superior)
-* NPM (Gerenciador de pacotes)
 
 ### Passo a Passo
 
@@ -73,28 +53,26 @@ O sistema segue uma arquitetura **Cliente-Servidor (MVC simplificado)**:
 ```bash
 git clone [https://github.com/gustydev/vitrineartesanato.git](https://github.com/gustydev/vitrineartesanato.git)
 cd VitrineArtesanato
-```
+````
 
-**2. Configurar e Rodar o Backend**
+**2. Rodar o Backend (API)**
 
 ```bash
 cd backend
 npm install
-node src/server.js
+npm start
 ```
 
-*O servidor iniciará na porta 3001 (http://localhost:3001)*
+*O servidor iniciará na porta 3001. Não é necessário configurar banco de dados local.*
 
-**3. Configurar e Rodar o Frontend**
-abra um novo terminal na raiz do projeto e execute:
+**3. Rodar o Frontend (Vitrine)**
+Em outro terminal:
 
 ```bash
 cd frontend
 npm install
 npm start
 ```
-
-*O navegador abrirá automaticamente em http://localhost:3000*
 
 -----
 

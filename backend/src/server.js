@@ -45,5 +45,9 @@ const produtos = [
 app.get('/', (req, res) => res.send('API Vitrine Rodando!'));
 app.get('/api/products', (req, res) => res.json(produtos));
 
-const PORT = 3001;
-app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
+module.exports = app;
+
+if (require.main === module) {
+    const PORT = 3001;
+    app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
+}

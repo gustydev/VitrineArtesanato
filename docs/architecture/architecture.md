@@ -7,9 +7,8 @@ O projeto segue uma arquitetura **Cliente-Servidor** (Client-Server), separando 
 ```mermaid
 graph TD
     Client[Frontend (React)] <-->|HTTP/JSON| Server[Backend (Node/Express)]
-    Server <-->|SQL| DB[(Database PostgreSQL)]
-```
-
+    Server -->|Leitura/Escrita| Mock[Dados em Memória (Array JS)]
+````
 ## Descrição dos Componentes
 
 ### 1\. Frontend (Camada de Apresentação)
@@ -24,8 +23,8 @@ graph TD
   * **Responsabilidade:** Fornecer os dados dos produtos via endpoints JSON e gerenciar as regras de negócio.
   * **Serviço:** Roda na porta padrão 3001.
 
-### 3\. Banco de Dados (Camada de Dados)
+### 3\. Camada de Dados (Simulação)
 
-  * **Tecnologia:** PostgreSQL
-  * **Responsabilidade:** Persistência dos dados de produtos e artesãos.
-  * **Estrutura:** Tabelas relacionais definidas em `database/schema.sql`.
+  * **Tecnologia:** Array de Objetos (JavaScript).
+  * **Justificativa:** Para esta etapa de validação (N708), optou-se por dados voláteis para garantir a portabilidade e facilidade de execução por parte dos avaliadores, eliminando a necessidade de configuração de ambiente PostgreSQL local.
+  * **Modelo Relacional:** A estrutura final para produção já está modelada no arquivo `database/schema.sql`.
